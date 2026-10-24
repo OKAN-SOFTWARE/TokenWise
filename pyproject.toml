@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokenwise-optimizer"
+version = "0.1.0"
+description = "Offline-first AI inference and cloud cost intelligence"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Okan Tiktas"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+aws = ["boto3>=1.34,<2"]
+
+[project.scripts]
+tokenwise = "tokenwise.__main__:main"
+
+[tool.setuptools]
+packages = ["tokenwise"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+tokenwise = ["static/*.html", "static/*.css", "static/*.js", "static/*.svg"]

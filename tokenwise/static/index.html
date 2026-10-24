@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1014">
+  <meta name="description" content="TokenWise — The AI economy, under your control. Local-first token and cloud cost intelligence.">
+  <title>TokenWise — The Efficiency Terminal</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="#overview" class="wordmark" aria-label="TokenWise home">
+        <span class="brandmark"><span>t</span><i></i></span>
+        <span class="brand-title">tokenwise<span class="brand-dot">.</span><small>EFFICIENCY INTELLIGENCE</small></span>
+      </a>
+      <div class="nav-caption">WORKSPACE <span>01 / LOCAL</span></div>
+      <nav aria-label="Primary">
+        <a class="nav-item active" href="#overview" data-view="overview"><span class="nav-icon">▥</span> Overview <span class="nav-shortcut">01</span></a>
+        <a class="nav-item" href="#scenario" data-view="scenario"><span class="nav-icon">◇</span> Scenario lab <span class="nav-shortcut">02</span></a>
+        <a class="nav-item" href="#microscope" data-view="microscope"><span class="nav-icon">⌁</span> Prompt microscope <span class="nav-shortcut">03</span></a>
+        <a class="nav-item" href="#evidence" data-view="evidence"><span class="nav-icon">▤</span> Evidence ledger <span class="nav-shortcut">04</span></a>
+      </nav>
+      <div class="sidebar-brief">
+        <div class="brief-title"><span class="breathing-dot"></span> LOCAL ENGINE ONLINE</div>
+        <p>Every calculation happens on this machine. No prompts leave your browser in demo mode.</p>
+        <span class="brief-footer">AWS CONNECTION <strong>DISABLED</strong></span>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="avatar">OT</div><div><strong>Okan Software</strong><small>Developer workspace</small></div>
+        <span class="chevron">⌁</span>
+      </div>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <div class="breadcrumbs">WORKSPACE <span>/</span> <strong>EFFICIENCY TERMINAL</strong></div>
+        <div class="topbar-right"><span class="tag tag-outline"><span class="tag-dot"></span> SYNTHETIC DATA</span><span class="today" id="today"></span></div>
+      </header>
+      <div class="content-body">
+        <section class="hero">
+          <div class="hero-text">
+            <div class="eyebrow"><span class="eyebrow-line"></span> THE TOKEN ECONOMY, DECODED <span class="hero-serial">// 001</span></div>
+            <h1>Make every<br><em>token count.</em></h1>
+            <p>Explore the architecture of a smarter AI workload. Trim the waste, preserve the intelligence, prove the savings.</p>
+            <div class="hero-actions"><a href="#scenario" class="button button-primary" data-view="scenario">OPEN SCENARIO LAB <span>↗</span></a><span class="hero-subnote">NO API KEY REQUIRED · $0 CLOUD SPEND</span></div>
+          </div>
+          <div class="orb-panel" aria-label="Illustration of token flow across an optimization engine">
+            <div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><div class="orbit orbit-inner"></div>
+            <div class="orb-core"><span>TW</span><small>ENGINE</small></div>
+            <div class="orbit-node orbit-node-a"></div><div class="orbit-node orbit-node-b"></div><div class="orbit-node orbit-node-c"></div>
+            <span class="orb-label orb-label-top">INPUT / TOKENS</span><span class="orb-label orb-label-bottom">COST / QUALITY</span>
+            <div class="orb-crosshair h"></div><div class="orb-crosshair v"></div>
+          </div>
+        </section>
+
+        <div class="section-head"><div><span class="section-number">01</span><h2>Efficiency snapshot</h2></div><span class="section-detail">30-DAY PROJECTION <span class="section-faint">/ ILLUSTRATIVE RATES</span></span></div>
+        <section class="metrics" aria-label="Illustrative monthly metrics">
+          <article class="metric"><div class="metric-label">BASELINE EXPENDITURE <span>↗</span></div><div class="metric-value" id="baseline-value">—</div><div class="metric-footer">Monthly · unoptimized model mix</div><div class="metric-rail"></div></article>
+          <article class="metric"><div class="metric-label">OPTIMIZED PROJECTION <span>↘</span></div><div class="metric-value" id="optimized-value">—</div><div class="metric-footer">Monthly · scenario estimate</div><div class="metric-rail rail-teal"></div></article>
+          <article class="metric metric-accent"><div class="metric-label">POTENTIAL SAVINGS <span>✳</span></div><div class="metric-value"><span id="savings-value">—</span><span class="metric-subvalue" id="savings-pct"></span></div><div class="metric-footer">Not verified until quality is tested</div><div class="metric-rail rail-lime"></div></article>
+          <article class="metric"><div class="metric-label">REQUEST VOLUME <span>⊞</span></div><div class="metric-value" id="requests-value">—</div><div class="metric-footer">Simulated requests / 30 days</div><div class="metric-rail rail-blue"></div></article>
+        </section>
+
+        <section class="analytics-grid">
+          <article class="panel trajectory-panel">
+            <div class="panel-heading"><div><div class="overline">THE EXPERIMENT</div><h3>Cost trajectory</h3></div><span class="pill">SYNTHETIC / 14 DAYS</span></div>
+            <div class="legend"><span><i class="legend-dot original"></i> Original workload</span><span><i class="legend-dot optimized"></i> Optimized workload</span></div>
+            <div class="chart-wrap"><div class="chart-yaxis"><span>HIGH</span><span>MID</span><span>LOW</span></div><svg id="trajectory-chart" viewBox="0 0 620 205" preserveAspectRatio="none" role="img" aria-label="Simulated baseline and optimized daily cost trends"><line class="gridline" x1="0" y1="28" x2="620" y2="28"/><line class="gridline" x1="0" y1="102" x2="620" y2="102"/><line class="gridline" x1="0" y1="176" x2="620" y2="176"/><polyline id="original-path" class="curve curve-original" points=""/><polyline id="optimized-path" class="curve curve-optimized" points=""/></svg></div>
+            <div class="chart-xaxis"><span>DAY 01</span><span>DAY 07</span><span>DAY 14</span></div>
+          </article>
+          <article class="panel waterfall-panel">
+            <div class="panel-heading"><div><div class="overline">THE LEVERS</div><h3>Where savings come from</h3></div><span class="pill pill-orange">4 STAGES</span></div>
+            <div class="waterfall" id="waterfall"></div>
+            <p class="panel-footnote">Sequential projections, not observed AWS charges. First cache writes are excluded.</p>
+          </article>
+        </section>
+
+        <section id="scenario" class="lab-section">
+          <div class="section-head"><div><span class="section-number">02</span><h2>Scenario laboratory</h2></div><span class="section-detail">DRAG THE LEVERS · MEASURE THE EFFECT</span></div>
+          <div class="lab-grid">
+            <div class="panel lab-controls">
+              <div class="panel-heading"><div><div class="overline">CONTROL SURFACE</div><h3>Design your workload</h3></div><span class="signal">● READY</span></div>
+              <div class="input-trio">
+                <label>REQUESTS / DAY <input type="number" id="requests" min="1" max="2000000" value="12000"></label>
+                <label>INPUT TOKENS <input type="number" id="input-tokens" min="1" max="500000" value="2400"></label>
+                <label>OUTPUT TOKENS <input type="number" id="output-tokens" min="1" max="100000" value="520"></label>
+              </div>
+              <div class="sliders">
+                <div class="slider-group"><label for="prompt-trim">Prompt context reduction <output id="prompt-trim-value">22%</output></label><input type="range" id="prompt-trim" min="0" max="80" value="22"><p>Remove repetitive or irrelevant input. May affect fidelity.</p></div>
+                <div class="slider-group"><label for="output-trim">Response size control <output id="output-trim-value">12%</output></label><input type="range" id="output-trim" min="0" max="80" value="12"><p>Reduce generation length without truncating useful answers.</p></div>
+                <div class="slider-group"><label for="cache-hit">Warm cache hit rate <output id="cache-hit-value">46%</output></label><input type="range" id="cache-hit" min="0" max="100" value="46"><p>Percentage of calls benefiting from reusing stable context.</p></div>
+                <div class="slider-group"><label for="cache-prefix">Cacheable prompt prefix <output id="cache-prefix-value">55%</output></label><input type="range" id="cache-prefix" min="0" max="100" value="55"><p>Share of optimized input eligible for cache reads.</p></div>
+                <div class="slider-group"><label for="compact-route">Compact model routing <output id="compact-route-value">32%</output></label><input type="range" id="compact-route" min="0" max="100" value="32"><p>Route straightforward tasks to a lighter model tier.</p></div>
+              </div>
+              <div class="lab-buttons"><button class="button button-primary" id="run-scenario">RUN SIMULATION <span>→</span></button><button class="button button-quiet" id="reset-scenario" type="button">RESET</button></div>
+            </div>
+            <div class="panel outcome-panel">
+              <div class="panel-heading"><div><div class="overline">SIMULATION OUTPUT</div><h3>Projected impact</h3></div><span class="pill" id="risk-pill">QUALITY GATE REQUIRED</span></div>
+              <div class="outcome-halo"><div><small>ESTIMATED SAVINGS</small><strong id="outcome-percent">—</strong><span id="outcome-dollar">—</span></div></div>
+              <div class="outcome-stat"><span>Cost per 1,000 requests</span><strong id="cost-per-k">—</strong></div>
+              <div class="outcome-stat"><span>Cached input token reads</span><strong id="cached-tokens">—</strong></div>
+              <div class="outcome-stat"><span>Estimated input tokens after trim</span><strong id="optimized-input">—</strong></div>
+              <div class="risk-box"><span class="risk-icon">!</span><p id="risk-message">Measured quality must be verified before deployment.</p></div>
+              <p class="footnote">Synthetic model rates. Excludes cache write cost, AWS hosting and taxes. This is a scenario planner, not an AWS invoice.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="microscope" class="microscope-section">
+          <div class="section-head"><div><span class="section-number">03</span><h2>Prompt microscope</h2></div><span class="section-detail">PRIVATE ON-DEVICE ANALYSIS</span></div>
+          <div class="panel microscope-panel"><div class="microscope-left"><div class="panel-heading"><div><div class="overline">CONTEXT HYGIENE</div><h3>Find the hidden weight</h3></div><span class="pill">HEURISTIC ESTIMATE</span></div>
+            <textarea id="prompt-text" rows="7" spellcheck="false" placeholder="Paste a non-sensitive prompt here to inspect its structure. No text is stored or sent to a model.">You are an expert software engineer. Review this code for security and performance.
+Please be thorough and concise.
+Please be thorough and concise.
+Return the top three fixes with examples.</textarea>
+            <div class="prompt-actions"><button class="button button-primary" id="inspect-prompt">ANALYZE PROMPT <span>⌕</span></button><span class="footnote">Approx. tokens ≈ UTF-8 bytes / 4</span></div></div>
+            <div class="microscope-right"><div class="overline">DIAGNOSTIC READOUT</div><div class="prompt-count"><strong id="prompt-token-count">—</strong><span>ESTIMATED TOKENS</span></div><div class="mini-readings"><span id="prompt-chars">— characters</span><span id="prompt-dupes">— repeats</span></div><div class="prompt-tips" id="prompt-tips"><p>Run an inspection to see targeted suggestions.</p></div></div>
+          </div>
+        </section>
+
+        <section id="evidence" class="evidence-section">
+          <div class="section-head"><div><span class="section-number">04</span><h2>Evidence, not optimism</h2></div><span class="section-detail">THE QUALITY GATE</span></div>
+          <div class="evidence-grid">
+            <div class="panel proof-panel"><div class="panel-heading"><div><div class="overline">PAIRED OBSERVATIONS</div><h3>The acceptance test</h3></div><span class="pill" id="gate-pill">—</span></div><p>Lower token spend is only valuable if the answer remains useful. TokenWise evaluates <strong>cost per passing response</strong> and rejects quality regressions.</p><div class="proof-rows"><div><span>BASELINE PASS RATE</span><strong id="baseline-pass">—</strong></div><div><span>CANDIDATE PASS RATE</span><strong id="candidate-pass">—</strong></div><div><span>COST / PASS, BEFORE</span><strong id="baseline-cost-pass">—</strong></div><div><span>COST / PASS, AFTER</span><strong id="candidate-cost-pass">—</strong></div></div><div class="import-evidence"><label class="button button-quiet">IMPORT BENCHMARK JSON <input id="benchmark-file" type="file" accept=".json,application/json" hidden></label><span id="benchmark-source">24 synthetic demo pairs</span></div><p class="footnote">Imported file: {"rows": [{"baseline": {"cost_usd": 0.02, "quality": 4, "latency_ms": 400}, "candidate": {"cost_usd": 0.01, "quality": 4, "latency_ms": 300}}]}. No benchmark rows are stored.</p></div>
+            <div class="panel ledger-panel"><div class="panel-heading"><div><div class="overline">LOCAL SQLITE HISTORY</div><h3>Recent experiments</h3></div><button id="refresh-runs" class="tiny-action" type="button">REFRESH ↻</button></div><div class="table-scroll"><table><thead><tr><th>TIME</th><th>REQUESTS</th><th>SAVINGS</th><th>FLAG</th></tr></thead><tbody id="run-rows"><tr><td colspan="4" class="empty-state">Run a simulation to start your evidence ledger.</td></tr></tbody></table></div><p class="footnote">This ledger stores scenario parameters and projections, never the prompt text.</p></div>
+          </div>
+        </section>
+
+        <footer class="footer"><span>© 2026 OKAN SOFTWARE · TOKENWISE 0.1</span><span>MEASURE / QUESTION / OPTIMIZE <i>✳</i></span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "quality_floor": 4,
+  "rows": [
+    {
+      "baseline": {"cost_usd": 0.024, "quality": 4.7, "latency_ms": 812},
+      "candidate": {"cost_usd": 0.010, "quality": 4.5, "latency_ms": 603}
+    },
+    {
+      "baseline": {"cost_usd": 0.027, "quality": 4.4, "latency_ms": 904},
+      "candidate": {"cost_usd": 0.011, "quality": 4.2, "latency_ms": 645}
+    },
+    {
+      "baseline": {"cost_usd": 0.031, "quality": 4.6, "latency_ms": 948},
+      "candidate": {"cost_usd": 0.012, "quality": 4.1, "latency_ms": 689}
+    },
+    {
+      "baseline": {"cost_usd": 0.029, "quality": 4.2, "latency_ms": 883},
+      "candidate": {"cost_usd": 0.014, "quality": 4.3, "latency_ms": 702}
+    }
+  ]
+}
