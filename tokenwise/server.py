@@ -35,6 +35,13 @@ class TokenWiseHandler(BaseHTTPRequestHandler):
         # Do not log prompt bodies, query-string contents, or tokens.
         print("[TokenWise]", format % args)
 
+    def log_request(self, code="-", size="-"):
+        # The standard handler logs the complete request line, including query strings.
+        # Preserve request method, path and status without exposing URL parameters.
+        safe_path = urlsplit(self.path).path or "/"
+        self.log_message('"%s %s %s" %s %s',
+                         self.command, safe_path, self.request_version, code, size)
+
     def _headers(self, code: int, type_: str, length: int):
         self.send_response(code)
         self.send_header("Content-Type", type_)
