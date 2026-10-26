@@ -1,7 +1,9 @@
+import io
 import json
 import tempfile
 import threading
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -33,6 +35,21 @@ class ServerTests(unittest.TestCase):
         status, result = self.request("/api/health")
         self.assertEqual(status, 200)
         self.assertFalse(result["aws_calls"])
+
+    def test_access_logs_omit_url_query_values(self):
+        sentinel = "TW_QUERY_SECRET_MUST_NOT_LEAK"
+        output = io.StringIO()
+        with redirect_stdout(output):
+            status, _ = self.request(f"/api/health?access_token={sentinel}")
+            self.assertEqual(status, 200)
+            status, _ = self.request(f"/api/inspect?token={sentinel}",
+                                     {"prompt": "a harmless test prompt"})
+            self.assertEqual(status, 200)
+        log = output.getvalue()
+        self.assertIn("GET /api/health", log)
+        self.assertIn("POST /api/inspect", log)
+        self.assertNotIn(sentinel, log)
+        self.assertNotIn("access_token=", log)
 
     def test_simulation_and_ledger(self):
         status, sim = self.request("/api/simulate", {"requests_per_day": 20})
